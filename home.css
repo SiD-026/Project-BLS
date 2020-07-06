@@ -28,8 +28,9 @@ p{
 }
 .container{
     position:relative;
+    border-bottom: solid white 2px;
 }
-#g-img{
+.img{
     width: 100%;
     height:100%;
 }
@@ -81,6 +82,9 @@ nav ul li a{
 nav ul li a:hover{
  background:rgb(54, 54, 54);
  color:rgb(15, 136, 192);
+}
+#social{
+      border-bottom: solid white 2px;
 }
 #foot{
     text-align: center;
