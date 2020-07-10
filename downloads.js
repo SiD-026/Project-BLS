@@ -8,3 +8,4 @@ menu.addEventListener('click' , () => {
 exit.addEventListener('click' , () => {
     nav.classList.toggle('navcon')
  })
+ 
