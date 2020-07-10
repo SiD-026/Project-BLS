@@ -85,12 +85,17 @@ nav ul li a:hover{
  color:rgb(15, 136, 192);
 }
 #social{
-      border-bottom: solid white 2px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid white 2px;
 }
 #foot{
     text-align: center;
     padding: 50px;
     background-color: rgb(39, 38, 38);
+}
+.social{
+    height:64px;
 }
 footer h4{
       margin: 0px;

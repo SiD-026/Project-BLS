@@ -76,6 +76,27 @@ nav ul li a:hover{
     width:100%;
     margin:2px;
 }
+#social{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2px;
+    background-color: black;
+    border-bottom: solid white 2px;
+}
+#foot{
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(39, 38, 38);
+}
+.social{
+    height:64px;
+}
+footer h4{
+    margin: 0px;
+   font-size: 22px;
+   color: whitesmoke;
+   background-color: rgb(39, 38, 38);
+}
 @media only screen and (min-width:360px){
     header{
         size:5px;

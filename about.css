@@ -80,7 +80,18 @@ h3{
 img{
     border-radius: 10px;
 }
-
+#foot{
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(39, 38, 38);
+}
+footer h4{
+    text-align: center;
+    margin: 0px;
+   font-size: 22px;
+   color: whitesmoke;
+   background-color: rgb(39, 38, 38);
+}
 @media only screen and (min-width:360px){
     header{
         size:5px;
@@ -125,6 +136,7 @@ img{
     .about{
         margin-left: 5px;
     }
+}
 @media only screen and (min-width:860px){
     #vid{
         width:100%;
