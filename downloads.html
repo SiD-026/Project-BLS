@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="downloads.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  border-radius: 4px;
+  background-color:rgb(0, 204, 255);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style> 
+    <title>BrightLiteStudios</title>
+</head>
+<body>
+    <div class="topm">
+        <header class="header" id="bls">
+            <img src="blslogo1.png" alt="BrightLiteStudios" id="logo">
+            <nav>
+                  <a href="#" class="icon" >
+                    <img src="icons8-menu.svg" alt="menu" class="menu" id="menu" height="50px" width="50px">   
+                </a>
+                <ul class="navcon" id="nav">
+                    <li><a href="home.html" id="home">Home</a></li>
+                    <li><a href="about.html" id="about">About Us</a></li>
+                    <li><a href="downloads.html" id="downloads">Downloads</a></li>
+                    <li><a href="#" id="exit">Back -]</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="colour">
+     <section class="container"> 
+        <!-- <h1 class="top">Game name</h1> -->
+        <div class="content">
+            <img src="ImpactZero(Out 1).jpg" alt="" id="g-img-one" class="img">
+            <a href=""><button class="button" id="izd"><span>DOWNLOAD</span></button></a>
+            <!-- <button class="button"><span>DOWNLOAD</span></button> -->
+        </div>
+        <div class="content">
+            <img src="bl2 title.png" alt="" class="img" id="g-img-two">
+            <a href=""><button class="button" id="atd"><span>DOWNLOAD</span></button></a>
+        </div>
+        
+     </section>
+  </div>
+    <script src="downloads.js"></script>
+    </body>
+</html>

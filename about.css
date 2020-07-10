@@ -6,7 +6,6 @@ ul{
     list-style-type:none;
 }
 header{
-    background:rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     padding-left:20px;
@@ -14,52 +13,22 @@ header{
     padding-top:10px;
     padding-bottom:5px;
 }
-.navcon{
-    display: none;    
-}
 #bls{
     padding: 10px;
 }
+.navcon{
+    display: none;    
+}
+#logo{
+    height:70px;
+    width: 70px;
+}
+#name{
+      transform: translateY(20%);
+}
 .logo{
-    z-index:20;
     display: flex;
     justify-content: space-between;
-
-} 
-#logo{
-        height:70px;
-        width: 70px;
-    }
-.container{
-    position:relative;
-    border-bottom: solid white 2px;
-}
-.img{
-    width: 100%;
-    height:100%;
-}
-h1{ 
-    color: aqua;
-    background-color: transparent;
-    position:absolute;
-    top:28px;
-    left:16px;
-}
-#menu{
-    z-index:10;
-    transform: translatey(15%);
-}
-section{
-    background-color: black;
-}
-#social{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-}
-#vid{
-    width:100%;
-    height:50%;
 }
 nav ul{
     position: fixed;
@@ -81,23 +50,37 @@ nav ul li a{
     width: 100%;
 }
 nav ul li a:hover{
- background:rgb(54, 54, 54);
- color:rgb(15, 136, 192);
+    background:rgb(54, 54, 54);
+    color:rgb(15, 136, 192);
 }
-#social{
-      border-bottom: solid white 2px;
+.about{
+       display:-moz-inline-stack;
+       justify-content: space-evenly;
+       font-family:black;
+       width: 100%;
 }
-#foot{
+.info{
+    display: inline-block;
     text-align: center;
-    padding: 50px;
-    background-color: rgb(39, 38, 38);
+    margin-bottom: 20px;
+    margin-top:20px;
+    height:50%;
+    font-size: 15px;
+    border: solid black 2px;
+    padding: 2px;
+    border-radius: 10px;
 }
-footer h4{
-      margin: 0px;
-     font-size: 22px;
-     color: whitesmoke;
-     background-color: rgb(39, 38, 38);
+h4{
+    font-size:20px;
 }
+h3{
+    text-align: center;
+    font-size: 100px;
+}
+img{
+    border-radius: 10px;
+}
+
 @media only screen and (min-width:360px){
     header{
         size:5px;
@@ -108,42 +91,40 @@ footer h4{
     #g-img{
         max-width:100%;
     }
-    #logo{
-        height:90px;
-        width: 90px;
+    h3{
+        font-size: 25px;
     }
 
 }
 @media only screen and (min-width:430px){
-    #g-img{
-        width: 100%;
-    }
-    #vid{
-        width:100%;
-    }
-    #name{
-        font-size:35px ;
-        transform: translatey(-10%);
-    }
     #logo{
         height:90px;
         width: 90px;
     }   
+    .img{
+        width: 100px;
+    }
+    .about{
+    font-size: 26px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    h3{
+        font-size:30px;
+    }
 }
 @media only screen and (min-width:630px){
-    #vid{
-        width:100%;
+    .info{
+        display:flex;
+        text-align: justify;
     }
-    #social{
-        justify-content: space-evenly;
+    h4{
+        text-align: left;
     }
-    #name{
-        font-size: 40px;
-        text-align: center;
-
+    .about{
+        margin-left: 5px;
     }
-}
-
 @media only screen and (min-width:860px){
     #vid{
         width:100%;
@@ -155,6 +136,9 @@ footer h4{
     #logo{
         height:100px;
         width: 100px;        
+    }
+    h3{
+        font-size: 70px;
     }
 
 }
@@ -174,7 +158,7 @@ footer h4{
         transform: translatey(-30%);
     }
     .navcon{
-        display: block;
+        display:block;
         margin: 0 auto 13% auto;
     }
     #menu{
@@ -189,30 +173,18 @@ footer h4{
     }
     nav ul li{
         float: left;      
-        background-color: rgb(255, 255, 255);
+        background-color:white;
       }
     nav ul li a{
         size:100px;
         color: rgb(0, 0, 0);
         padding:1em 2em;
-        background-color: rgb(255, 255, 255);
+        background-color:white
     } 
     nav ul li a:hover{
         color: rgb(255, 60, 0);
-        background-color:rgb(255, 255, 255);
+        background-color:white
     } 
-    #home:hover{
-        color:rgb(255, 0, 0);
-    }
-    #about:hover{
-        color:rgb(9, 201, 111);
-    }
-    #downloads:hover{
-        color: rgb(0, 204, 255);
-    }
-    #g-img{
-        width: 100%;
-    }
     #exit{
         display: none;
     }
@@ -220,6 +192,20 @@ footer h4{
         height:120px;
         width: 120px;
     }
+    .img{
+        width: 150px;
+        height: 150px;
+    }
+    .info{
+        height:150px;
+    }
+    .about{
+        font-size:30px;
+    }
+    h4{
+        font-size:40px;
+    }
+}
 @media only screen and (min-width:1200px){
     #vid{
         width:100%;
@@ -247,11 +233,11 @@ footer h4{
         width:100%;
         height:30%;
     }
-    #name{
+    /* #name{
         font-size: 50px;
         transform: translatex(10%);
         transform: translatey(-30%);
-    }
+    } */
     nav ul li a{
         font-size: 20px;
 
@@ -269,11 +255,11 @@ footer h4{
         font-size:1px;
         text-align: center;
     }
-    #name{
+    /* #name{
         font-size: 50px;
         transform: translatex(10%);
         transform: translatey(-10%);
-    }
+    } */
     nav ul li a{
         font-size: 20px;
     }
